@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="本地视频"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/order"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="12dp"
+            android:layout_toLeftOf="@id/menu"
+            android:background="@mipmap/menu_order" />
+
+        <ImageButton
+
+            android:id="@+id/menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/order"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/order"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/menu_more_selector" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dzg.yingyin.ui.view.ReFlashListView
+            android:id="@+id/reFlashListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/alllistempty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="空空如也"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="点击刷新"
+                android:textColor="#afafaf"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

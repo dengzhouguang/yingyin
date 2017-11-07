@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D83CA</color>
+    <color name="colorPrimaryDark">#9bd0ef</color>
+    <color name="colorAccent">#9A9A9A</color>
+    <color name="colorView">#ffc0c0c0</color>
+    <color name="colorMenu">#4d4d4d</color>
+    <color name="colorBlack">#000000</color>
+    <color name="popup_bg">#8f000000</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="comment_popup_bg">#292929</color>
+    <color name="comment_popup_tx_bg">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="click_bg">#c7c7c7</color>
+    <color name="menu_bg">#2b2b2b</color>
+    <color name="menu_click_bg">#515151</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+</menu>
+    <!--<item
+        android:id="@+id/manual"
+        android:title="手动打开"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/edits"
+        android:title="批量编辑"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/continu"
+        android:title="继续播放"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/detelelist"
+        android:title="删除列表"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/encryptlist"
+        android:title="加密列表"
+        app:showAsAction="never"/>-->

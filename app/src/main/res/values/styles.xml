@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--android:id="@+id/textViewHardwareAccelerate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="15dp"
+    android:text="开启硬件加速"
+    android:textColor="@drawable/item_setting_titletext_selector"
+    android:textSize="14sp"-->
+    <style name="setting_textview_item_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/item_setting_selector</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+</resources>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/left_circle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.5dp"
+                android:src="@mipmap/setting_title_circle" />
+
+            <TextView
+                android:id="@+id/textview_basic_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/left_circle1"
+                android:text="基础设置"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/autoplayfl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_setting_selector"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/autoplaytitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动播放下一个"
+                    android:textColor="@drawable/item_setting_titletext_selector"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/autoplaysub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仅播放列表中选中的任务"
+                    android:textColor="@drawable/item_setting_subtext_selector"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/autoplaycb"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/checkbox_select" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scanfl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_setting_selector"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/scantitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="视屏扫描目录"
+                android:textColor="@drawable/item_setting_titletext_selector"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/scansub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="默认扫描目录"
+                android:textColor="@drawable/item_setting_subtext_selector"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutScanHiddenFiles"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_setting_selector"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/textViewScanHiddenFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="扫描被隐藏的文件"
+                android:textColor="@drawable/item_setting_titletext_selector"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/checkboxScanHiddenFiles"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/checkbox_unselect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutShownByFolder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_setting_selector"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/textViewShownByFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="按文件夹显示"
+                android:textColor="@drawable/item_setting_titletext_selector"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/checkboxShownByFolder"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/checkbox_unselect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutHardwareAccelerate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_setting_selector"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/textViewHardwareAccelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="开启硬件加速"
+                android:textColor="@drawable/item_setting_titletext_selector"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/checkboxHardwareAccelerate"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/checkbox_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/left_circle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.5dp"
+                android:src="@mipmap/setting_title_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/left_circle4"
+                android:text="隐私"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview_password_management"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|start"
+            android:background="#f8f8f8"
+            android:paddingLeft="15dp"
+            android:text="密码管理"
+            android:textColor="@drawable/item_setting_titletext_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:background="#f8f8f8"
+            android:id="@+id/textview_private_list"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical|start"
+            android:paddingStart="15dp"
+            android:text="查看加密列表"
+            android:textColor="@drawable/item_setting_titletext_selector"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/left_circle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.5dp"
+                android:src="@mipmap/setting_title_circle" />
+
+            <TextView
+                android:id="@+id/versionupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/left_circle3"
+                android:background="#00ffffff"
+                android:text="选项"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/check_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:layout_marginTop="1px"
+            android:background="#fff8f8f8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/check_update_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="15dp"
+                android:background="#00ffffff"
+                android:text="检查更新"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_check_update_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:layout_marginTop="1px"
+            android:background="#fff8f8f8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/opinion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="15dp"
+                android:background="#00ffffff"
+                android:text="意见反馈"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_wifi_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="1px"
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:layout_marginTop="1px"
+            android:background="#fff8f8f8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_wifi_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="15dp"
+                android:background="#00ffffff"
+                android:text="关于QQ影音"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </LinearLayout>
+     </ScrollView>
+</LinearLayout>

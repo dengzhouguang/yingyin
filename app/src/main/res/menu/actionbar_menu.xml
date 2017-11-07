@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort"
+        android:icon="@mipmap/menu_order"
+        android:title="排序"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/menu_more_selector"
+        android:title="菜单"
+        app:showAsAction="always">
+    </item>
+</menu>

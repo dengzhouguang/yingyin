@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorTransparent"
+    android:layout_width="114dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/colorTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="8dp">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:background="@mipmap/triangle"
+            android:layout_width="16dp"
+            android:layout_height="8dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/shape_corner"
+        android:id="@+id/popup_contianer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/manual"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="手动打开"
+            android:textColor="@color/comment_popup_tx_bg"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="114dp"
+            android:layout_height="0.5dp"
+            android:background="#5f5f5f" />
+
+        <TextView
+            android:id="@+id/edits"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="批量编辑"
+            android:textColor="@color/comment_popup_tx_bg"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="114dp"
+            android:layout_height="0.5dp"
+            android:background="#5f5f5f" />
+
+        <TextView
+            android:id="@+id/continu"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="继续播放"
+            android:textColor="@color/comment_popup_tx_bg"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="114dp"
+            android:layout_height="0.5dp"
+            android:background="#5f5f5f" />
+
+        <TextView
+            android:id="@+id/detelelist"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="删除列表"
+            android:textColor="@color/comment_popup_tx_bg"
+            android:textSize="14sp" />
+        <View
+            android:layout_width="114dp"
+            android:layout_height="0.5dp"
+            android:background="#5f5f5f" />
+
+        <TextView
+            android:id="@+id/encryptlist"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="加密列表"
+            android:textColor="@color/comment_popup_tx_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
+<!--
+<item
+android:id="@+id/manual"
+android:title="手动打开"
+app:showAsAction="never">
+</item>
+<item
+android:id="@+id/edits"
+android:title="批量编辑"
+app:showAsAction="never"/>
+<item
+android:id="@+id/continu"
+android:title="继续播放"
+app:showAsAction="never"/>
+<item
+android:id="@+id/detelelist"
+android:title="删除列表"
+app:showAsAction="never"/>
+<item
+android:id="@+id/encryptlist"
+android:title="加密列表"
+app:showAsAction="never"/>-->
