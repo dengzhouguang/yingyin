@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QQ影音</string>
+    <string name="app_name">影音</string>
     <string name="local">本地视频</string>
     <string name="find">查找共享</string>
     <string name="setting">设置</string>
